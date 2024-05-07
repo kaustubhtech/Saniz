@@ -1,10 +1,18 @@
-/* GPIO Example
+/* Saniz Heavy Duty Sanitizer Spray
+This is for ESP32 and based on ESP-IDF environment. Th program runs on freeRTOS where the functions are built into tasks.
+The major tasks: -
+> detect_person_task
+> animate_rgb_task
+> display_on_oled_task
+> mlx91603_get_temp_task
 
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
+Minor taks : -
+> IrSensedNotifyTask
+> ReedSensedNotifyTask
 
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
+OTA task : -
+> advanced_ota_task
+
 */
 #include <stdio.h>
 #include <string.h>
